@@ -3,45 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hyperlink Tiles</title>
+  <title>Mohammed Farhan</title>
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      align-items: center;
-      height: 100vh;
-      background-color: #FFF5E1;
+      background-color: #f2f2f2; /* Tisse LIGHT GREY */
+      font-family: Arial, sans-serif;
+      text-align: center; /* Center text in the body */
+      margin: 0; /* Remove default margin */
+      padding: 0; /* Remove default padding */
+      position: relative; /* Required for positioning pseudo-element */
     }
-     h1 {
-      width: 100%;
-      text-align: center;
-      font-size: 80px; /* Font size set to 40 */
-      font-family: 'Charlotte Melody', cursive; /* Font family set to Charlotte Melody */
-      color: #5F4B3C; /* Font color set to #5F4B3C */
+    
+    body::before {
+      content: 'Mohammed Farhan';
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 40px;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.2); /* Watermark color (white with low opacity) */
+      pointer-events: none; /* Ensure the pseudo-element is not interactive */
+      z-index: -1; /* Place the watermark behind other elements */
+    }
+
+    h1 {
+      color: #8a1604; /* Al Adam */
+      font-family: 'Charlotte Melody', cursive;
+      font-size: 45px;
+      font-weight: bold;
       margin-bottom: 20px;
     }
 
-    .tile {
-      width: 200px;
+    p {
+      font-size: 14px;
+      color: #000000; /* Black color */
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+
+    /* Hyperlink styling */
+    a {
+       width: 200px;
       height: 100px;
       margin: 10px;
       text-align: center;
       line-height: 100px;
-      background-color:  #87CEFA;
+      background-color:  #8a1604;
       color: #fff;
       text-decoration: none;
       display: inline-block;
     }
+
+    a:hover {
+      background-color: #4c4c4c; /* Al Adam */
+      color: #ffffff; /* White */
+    }
+
+    /* Center hyperlinks */
+    .links-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Responsive styles */
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 12px;
+      }
+    }
   </style>
 </head>
 <body>
+
+  <!-- Headline -->
   <h1>Mohammed Farhan</h1>
-  <a href="https://www.google.com" class="tile"> Google </a>
+
+  <!-- Paragraph -->
+  <p>
+    In a world where just about everyone is represented online in some capacity, your professional bio will often serve as your first introduction to your intended audience. It can help influence whether someone invites you to connect, interview you, or simply move on.
+
+    But how does your professional bio work in tandem with your resume to tell your unique story? And what are some short professional bio examples you can reference to craft your own—helping you strike the perfect balance between informative and engaging?
+  </p>
+
+  <!-- Hyperlinks with button styles -->
+  <div class="links-container">
+    <a href="https://www.google.com" class="tile"> Google </a>
   <a href="https://www.youtube.com" class="tile">YouTube </a>
   <a href="https://edition.cnn.com" class="tile">CNN </a>
   <a href="https://www.bbc.com/" class="tile">BBC </a>
+  </div>
+
 </body>
 </html>
