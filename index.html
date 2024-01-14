@@ -1,4 +1,4 @@
--<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -12,6 +12,12 @@
       margin: 0;
       padding: 0;
       position: relative;
+    }
+
+    #wrapper {
+      border: 2px solid #8a1604; /* Adjust border thickness here */
+      margin: 0;
+      padding: 20px;
     }
 
     body::before {
@@ -111,11 +117,7 @@
     }
 
     .watermark {
-      position: fixed;
-      bottom: 0;
-      left: 50%;
-      transform: translateX(-50%);
-      font-size: 40px;
+      font-size: 30px;
       font-weight: none;
       color: white;
       pointer-events: none;
@@ -125,29 +127,32 @@
 </head>
 <body>
 
-  <!-- Headline -->
-  <h1>MOHAMMED FARHAN</h1>
-  <h2>IT SYSTEMS OFFICER</h2>
-  <br>
+  <div id="wrapper">
 
-  <!-- Paragraph -->
-  <p>
-    The Information Systems Officer will work alongside the Information System Manager (ISM) to help ensure HIE has access to secure and effective information systems. This will involve working closely with key System Owners* across HIE and key IT service suppliers to support the day-to-day running and integrity of these systems. The role also involves ensuring that all Systems adhere to various security standards and policies and follow both HIE’s IS Strategy and its overall strategy. Further key responsibilities lie with the implementation and testing of Disaster Recovery Scenarios and liaising with the Facilities Management department with this.
-  </p>
+    <!-- Headline -->
+    <h1>MOHAMMED FARHAN</h1>
+    <h2>IT SYSTEMS OFFICER</h2>
 
+    <!-- Paragraph -->
+    <p>
+      The Information Systems Officer will work alongside the Information System Manager (ISM) to help ensure HIE has access to secure and effective information systems. This will involve working closely with key System Owners* across HIE and key IT service suppliers to support the day-to-day running and integrity of these systems. The role also involves ensuring that all Systems adhere to various security standards and policies and follow both HIE’s IS Strategy and its overall strategy. Further key responsibilities lie with the implementation and testing of Disaster Recovery Scenarios and liaising with the Facilities Management department with this.
+    </p>
 
+ 
 
-  <!-- Hyperlinks with button styles -->
-  <div class="links-container">
-    <a href="https://www.google.com" class="link">Google</a>
-    <a href="https://www.youtube.com" class="link">YouTube</a>
-    <div class="line-break"></div>
-    <a href="https://edition.cnn.com" class="link">CNN</a>
-    <a href="https://www.bbc.com/" class="link">BBC</a>
+    <!-- Hyperlinks with button styles -->
+    <div class="links-container">
+      <a href="https://www.google.com" class="link">Google</a>
+      <a href="https://www.youtube.com" class="link">YouTube</a>
+      <div class="line-break"></div>
+      <a href="https://edition.cnn.com" class="link">CNN</a>
+      <a href="https://www.bbc.com/" class="link">BBC</a>
+    </div>
+
+    <!-- Watermark -->
+    <div class="watermark">Mohammed Farhan</div>
+
   </div>
-
-  <!-- Watermark -->
-  <div class="watermark">Mohammed Farhan</div>
 
 </body>
 </html>
