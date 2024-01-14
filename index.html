@@ -42,13 +42,12 @@
       font-weight: bold;
       margin-bottom: 20px;
     }
-<br>
-    
+
     p {
       font-size: 20px;
       color: #000000;
       line-height: 1.5;
-      margin-bottom: 20px;
+      margin-bottom: 30px; /* Added more space after the paragraph */
     }
 
     a {
@@ -70,7 +69,8 @@
 
     .links-container {
       display: flex;
-      justify-content: center;
+      flex-direction: column; /* Display hyperlinks in a column */
+      align-items: center; /* Center align hyperlinks */
     }
 
     @media only screen and (max-width: 600px) {
@@ -91,7 +91,7 @@
       transform: translateX(-50%);
       font-size: 50px;
       font-weight: none;
-      color: white ; /* Change the color to blue */
+      color: white; /* Change the color to blue */
       pointer-events: none;
       z-index: -1;
     }
@@ -105,14 +105,15 @@
 
   <!-- Paragraph -->
   <p>
-    The Information Systems Officer will work alongside the Information System Manager (ISM) to help ensure HIE has access to secure and effective information systems. This will involve working closely with key System Owners* across HIE and key IT service suppliers to support the day to day running and integrity of these systems. The role also involves ensuring that all Systems adhere to various security standards and policies and follow both HIE’s IS Strategy and its overall strategy. Further key responsibilities lie with the implementation and testing of Disaster Recovery Scenarios and liaising with the Facilities Management department with this.
+    The Information Systems Officer will work alongside the Information System Manager (ISM) to help ensure HIE has access to secure and effective information systems. This will involve working closely with key System Owners* across HIE and key IT service suppliers to support the day-to-day running and integrity of these systems. The role also involves ensuring that all Systems adhere to various security standards and policies and follow both HIE’s IS Strategy and its overall strategy. Further key responsibilities lie with the implementation and testing of Disaster Recovery Scenarios and liaising with the Facilities Management department with this.
   </p>
+   <br>
 
   <!-- Hyperlinks with button styles -->
   <div class="links-container">
-    <a href="https://www.google.com" class="tile">Google </a> </p>
-    <a href="https://www.youtube.com" class="tile">YouTube </a> </p>
-    <a href="https://edition.cnn.com" class="tile">CNN </a> </p>
+    <a href="https://www.google.com" class="tile">Google </a>
+    <a href="https://www.youtube.com" class="tile">YouTube </a>
+    <a href="https://edition.cnn.com" class="tile">CNN </a>
     <a href="https://www.bbc.com/" class="tile">BBC </a>
   </div>
 
