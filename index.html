@@ -47,10 +47,30 @@
       font-size: 20px;
       color: #000000;
       line-height: 1.5;
-      margin-bottom: 30px; /* Added more space after the paragraph */
+      margin-bottom: 30px;
     }
 
-    a {
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    table, th, td {
+      border: 1px solid #8a1604;
+    }
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #8a1604;
+      color: #fff;
+    }
+
+    .link {
       width: 200px;
       height: 100px;
       margin: 10px;
@@ -62,15 +82,20 @@
       display: inline-block;
     }
 
-    a:hover {
+    .link:hover {
       background-color: #4c4c4c;
       color: #ffffff;
     }
 
     .links-container {
       display: flex;
-      flex-direction: column; /* Display hyperlinks in a column */
-      align-items: center; /* Center align hyperlinks */
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .line-break {
+      width: 100%;
+      margin-top: 10px; /* Adjust as needed */
     }
 
     @media only screen and (max-width: 600px) {
@@ -83,7 +108,6 @@
       }
     }
 
-    /* Add watermark at the bottom of the page */
     .watermark {
       position: fixed;
       bottom: 0;
@@ -91,7 +115,7 @@
       transform: translateX(-50%);
       font-size: 50px;
       font-weight: none;
-      color: white; /* Change the color to blue */
+      color: white;
       pointer-events: none;
       z-index: -1;
     }
@@ -107,14 +131,16 @@
   <p>
     The Information Systems Officer will work alongside the Information System Manager (ISM) to help ensure HIE has access to secure and effective information systems. This will involve working closely with key System Owners* across HIE and key IT service suppliers to support the day-to-day running and integrity of these systems. The role also involves ensuring that all Systems adhere to various security standards and policies and follow both HIE’s IS Strategy and its overall strategy. Further key responsibilities lie with the implementation and testing of Disaster Recovery Scenarios and liaising with the Facilities Management department with this.
   </p>
-   <br>
+<br>
+<br> 
 
   <!-- Hyperlinks with button styles -->
   <div class="links-container">
-    <a href="https://www.google.com" class="tile">Google </a>
-    <a href="https://www.youtube.com" class="tile">YouTube </a>
-    <a href="https://edition.cnn.com" class="tile">CNN </a>
-    <a href="https://www.bbc.com/" class="tile">BBC </a>
+    <a href="https://www.google.com" class="link">Google</a>
+    <a href="https://www.youtube.com" class="link">YouTube</a>
+    <div class="line-break"></div>
+    <a href="https://edition.cnn.com" class="link">CNN</a>
+    <a href="https://www.bbc.com/" class="link">BBC</a>
   </div>
 
   <!-- Watermark -->
